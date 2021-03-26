@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Empresa Qualquer</title>
+</head>
+<link rel="stylesheet" type="text/css" href="./assets/index.css" media="screen" />
+
+    <body>
+        <h1>Cadastro de funcionario</h1>
+        <div class="alerta"> Preencha todos os campos </div>
+        <div>
+            <form class="form" action="" method="get">
+                
+        
+                <p><input required type="text" name="nomeCompleto" id='nomeCompleto'  class="input-nome" placeholder='Nome completo' >
+                    <label for="nomeCompleto" class="label-nome"></label><p>
+                <p><input type="text" name="sexo" id='sexo'  class="input-sexo" placeholder="Sexo" required>
+                    <label for="sexo" class="label-sexo" ></label><p>
+                <p><input type="text" name="profissao" id='profissao'  class="input-profissao" placeholder="Profissão" >
+                    <label for="profissao" class="label-profissao"></label><p>
+                    <label for="dataDeNascimento" class="label-data" ></label>Data de nascimento<p></p>    
+                <p><input type="date" name="dataDeNascimento" id='dataDeNascimento' class="input-data" placeholder="Data De Nascimento" >
+                <p><input type="number" name="salario" id='salario'  class="input-salario" placeholder="Salário" >
+                    <label for="salario" class="label-salario" ></label><p>
+
+                
+                
+            </form>
+            <button class="salvar"  onclick="adicionarFuncionario(datatable)">Salvar</button>
+        </div>
+
+        <div>
+            <table id="datatable">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Sexo</th>
+                        <th>Profissão</th>
+                        <th>Data de nascimento</th>
+                        <th>Salario</th>
+                        <th>Ações</th>
+                        
+            
+                    </tr>
+                </thead>
+
+                <tbody id="tbody">
+                    <tr id="funcionario">
+                        <td>Guga</td>
+                        <td>Masculino</td> 
+                        <td>Programador</td>
+                        <td>2005-01-27</td>
+                        <td>1</td>
+                        <td><button value= "editar" class="editar" id="editar" onclick='editar'>Editar</button>
+                        <button value= "excluir" class="remover" id="remover" onclick="excluirFuncionario(this.rowIndex-1)">Remover</button></td>
+                    </tr>
+
+                    <tr id="funcionario">
+                        <td>Dudu</td>
+                        <td>Masculino</td>
+                        <td>Programador</td>
+                        <td>1989-11-26</td>
+                        <td>1</td>
+                        <td><button value= "editar" class="editar" id="editar" onclick='btnEditar'>Editar</button>
+                        <button value= "excluir" class="remover" id="remover" onclick='excluirFuncionario(this.rowIndex-1)''>Remover</button>
+                        </td>
+                        
+                
+                        
+                    </tr>
+                </tbody>
+            
+            </table>
+            
+        </div>
+        
+    
+    
+    
+    
+    
+        <script src="./assets/index.js"></script>
+    </body>
+</html>

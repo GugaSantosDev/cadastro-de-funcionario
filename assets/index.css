@@ -1,0 +1,116 @@
+
+
+h1 {
+    color: #4CAF50;
+    
+}
+
+    tbody {
+        line-height: 2;
+        font-family: 'Open Sans', sans-serif;
+   }
+
+   td {
+       word-spacing: -15px;
+   }
+
+   table {
+       border-collapse: collapse;
+       border-style: solid;
+       border-color: #4CAF50;
+       width: 100%;
+       margin-top: 20px;
+       word-spacing: 10px;
+       
+       
+       
+
+   }
+
+    th, td {
+       border-style: solid;
+       border-color:#4CAF50;
+       border-collapse: collapse;
+       background-color: #d6f3d8;
+       margin-top: 20px;
+       
+   }
+    
+   td {
+       text-align: center;
+       word-spacing: 5px;
+   }
+   tr {
+       text-align: center;
+       color:black;
+       
+   }
+
+ 
+
+button{
+    background-color:#4CAF50;
+    border-radius: 12px;
+    border: 2px solid rgba(59, 59, 55, 0.438);
+    padding: 6px 32px;
+    margin-top: 20px;
+    text-align: center;
+    
+}
+.enviar{
+    background-color:#4CAF50;
+    border-radius: 12px;
+    border: 2px solid rgba(59, 59, 55, 0.438);
+    padding: 6px 32px;
+    margin-top: 20px;
+    text-align: center;
+
+}
+.remover{
+    background-color:#c22727;
+    border-radius: 12px;
+    border: 2px solid rgba(59, 59, 55, 0.438);
+    padding: 3px 16px;
+    margin-top: 20px;
+    text-align: center;
+    
+}
+.editar{
+    background-color:#4CAF50;
+    border-radius: 12px;
+    border: 2px solid rgba(59, 59, 55, 0.438);
+    padding: 3px 16px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+
+button:hover {
+    background-color:#8ed190;
+}
+
+
+input[type='text']{
+    padding: 1.5px 2.5px;
+    text-align: center;
+    
+}
+
+th {
+    height: 70px;
+    background-color: #4CAF50;
+    color:white;
+}
+
+input{
+    border:1.5px solid black;
+    
+}
+.alerta {
+	padding: 2px;
+    margin: 2px 2px 2px 2px;
+	font-size: 12px;
+    color: #c22727;
+}
+
+  
