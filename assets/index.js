@@ -4,7 +4,7 @@ const botaoEditar = document.querySelector('.editar');
 const tabela = document.querySelector('.datatable');
 const tbody = document.querySelector('.tbody');
 const inputs = document.querySelectorAll('inputs');
-
+const alerta = document.querySelector('.alerta')
 function adicionarFuncionario () {
     const inputs = document.querySelectorAll('input');
 
@@ -22,10 +22,14 @@ function adicionarFuncionario () {
     if (nEmptyInput > 0) {
 
         
-        alert('Todos os campos são obrigatórios')
+        alerta.style.display= 'block';
+        
 
         return;
+    }else {
+        alerta.style.display = 'none';
     }
+    
 
     tr += `<td><button class='editar'; id='editar'>Editar</button>
     <button class='remover'; id='remover' onclick='excluirFuncionario(this.rowIndex-1)'>Remover</button></td>`;
