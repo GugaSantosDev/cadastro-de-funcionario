@@ -5,6 +5,7 @@ const tabela = document.querySelector('.datatable');
 const tbody = document.querySelector('.tbody');
 const inputs = document.querySelectorAll('inputs');
 const alerta = document.querySelector('.alerta')
+
 function adicionarFuncionario () {
     const inputs = document.querySelectorAll('input');
 

@@ -1,64 +1,88 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+}
 
+body {
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+}
 
-h1 {
+header {
+    height: 80px;
+    display: flex;
+    background: #eaeaea;
+    padding: 10px;
+    vertical-align: middle;
+}
+
+header > div {
+    margin-left: 20px;
+}
+
+header > div > h1 {
+    margin-top: 18px;
     color: #4CAF50;
-    
 }
 
-    tbody {
-        line-height: 2;
-        font-family: 'Open Sans', sans-serif;
-   }
+.content {
+    padding: 20px;
+}
 
-   td {
-       word-spacing: -15px;
-   }
+tbody {
+    line-height: 2;
+    font-family: 'Open Sans', sans-serif;
+}
 
-   table {
-       border-collapse: collapse;
-       border-style: solid;
-       border-color: #4CAF50;
-       width: 100%;
-       margin-top: 20px;
-       word-spacing: 10px;
-       
-       
-       
+td {
+    word-spacing: -15px;
+}
 
-   }
-
-    th, td {
-       border-style: solid;
-       border-color:#4CAF50;
-       border-collapse: collapse;
-       background-color: #d6f3d8;
-       margin-top: 20px;
-       
-   }
-    
-   td {
-       text-align: center;
-       word-spacing: 5px;
-   }
-   tr {
-       text-align: center;
-       color:black;
-       
-   }
-
- 
-
-button{
-    background-color:#4CAF50;
-    border-radius: 12px;
-    border: 2px solid rgba(59, 59, 55, 0.438);
-    padding: 6px 32px;
+table {
+    border-collapse: collapse;
+    border-style: solid;
+    border-color: #4CAF50;
+    width: 100%;
     margin-top: 20px;
-    text-align: center;
-    
+    word-spacing: 10px;
 }
-.enviar{
-    background-color:#4CAF50;
+
+th, td {
+    border-style: solid;
+    border-color: #4CAF50;
+    border-collapse: collapse;
+    background-color: #d6f3d8;
+    margin-top: 20px;
+
+}
+
+td {
+    text-align: center;
+    word-spacing: 5px;
+}
+
+tr {
+    text-align: center;
+    color: black;
+
+}
+
+
+button {
+    background-color: #4CAF50;
     border-radius: 12px;
     border: 2px solid rgba(59, 59, 55, 0.438);
     padding: 6px 32px;
@@ -66,17 +90,29 @@ button{
     text-align: center;
 
 }
-.remover{
-    background-color:#c22727;
+
+.enviar {
+    background-color: #4CAF50;
+    border-radius: 12px;
+    border: 2px solid rgba(59, 59, 55, 0.438);
+    padding: 6px 32px;
+    margin-top: 20px;
+    text-align: center;
+
+}
+
+.remover {
+    background-color: #c22727;
     border-radius: 12px;
     border: 2px solid rgba(59, 59, 55, 0.438);
     padding: 3px 16px;
     margin-top: 20px;
     text-align: center;
-    
+
 }
-.editar{
-    background-color:#4CAF50;
+
+.editar {
+    background-color: #4CAF50;
     border-radius: 12px;
     border: 2px solid rgba(59, 59, 55, 0.438);
     padding: 3px 16px;
@@ -86,32 +122,60 @@ button{
 
 
 button:hover {
-    background-color:#8ed190;
+    background-color: #8ed190;
 }
 
 
-input[type='text']{
+input[type='text'] {
     padding: 1.5px 2.5px;
     text-align: center;
-    
+
 }
 
 th {
     height: 70px;
     background-color: #4CAF50;
-    color:white;
+    color: white;
 }
 
-input{
-    border:1.5px solid black;
-    
+input {
+    border: 1.5px solid black;
+
 }
+
 .alerta {
-	padding: 2px;
+    padding: 2px;
     margin: 2px 2px 2px 2px;
-	font-size: 12px;
+    font-size: 12px;
     color: #c22727;
     display: none;
 }
+
+
+.form > div {
+    margin: 10px;
+}
+
+.form > div > label {
+    margin: 5px 0;
+    display: block;
+}
+
+.form > div > input {
+    height: 25px;
+    width: 400px;
+}
+
+::placeholder {
+    text-align: left;
+}
+
+
+
+
+
+
+
+
 
   
