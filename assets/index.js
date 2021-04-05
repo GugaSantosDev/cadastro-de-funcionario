@@ -54,18 +54,13 @@ function adicionarFuncionario () {
 
 };
 
-
-
 /*botaoEnviar.addEventListener('click', function() {
     criaBotoes()
     
 }); */
 
-
 function excluirFuncionario(posicaoDaLinha) {
-    
     document.getElementById('tbody').deleteRow(posicaoDaLinha);
-
 };
 
 
