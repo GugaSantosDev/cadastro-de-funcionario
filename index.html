@@ -20,17 +20,17 @@
 </div>
 
 <div class="content">
-    <form class="form" action="" method="get">
+    <div class="form">
 
         <div>
             <label for="nomeCompleto">Nome Completo:</label>
             <input
-                    required
+                    
                     type="text"
                     name="nomeCompleto"
                     id="nomeCompleto"
                     class="input-nome"
-                    placeholder="Escreve seu nome..."
+                    placeholder="Escreva seu nome..."
             />
         </div>
 
@@ -41,14 +41,15 @@
                     name="sexo"
                     id="sexo"
                     class="input-sexo"
-                    placeholder="Esreve seu sexo..."
-                    required
+                    placeholder="Escreva seu sexo..."
+                    
             />
         </div>
 
         <div>
-            <label for="profissao">Proffisão:</label>
+            <label for="profissao">Profisão:</label>
             <input
+                    
                     type="text"
                     name="profissao"
                     id="profissao"
@@ -58,7 +59,9 @@
         </div>
 
         <div>
+            <label for="data-de-nascimento">Data de nascimento:</label>
             <input
+                    
                     type="date"
                     name="dataDeNascimento"
                     id="dataDeNascimento"
@@ -68,13 +71,27 @@
         </div>
 
         <div>
-            <input type="number" name="salario" id="salario" class="input-salario" placeholder="Salário">
+            <label for="salario">Salario:</label>
+            <input 
+            
+            type="number" 
+            name="salario" 
+            id="salario" 
+            class="input-salario" 
+            placeholder="Qual o seu salario?"
+
+            />
         </div>
 
         <div>
-            <button class="salvar" onclick="adicionarFuncionario(datatable)">Salvar</button>
+            <button 
+            class="salvar" 
+            type="submit"
+            onclick="adicionarFuncionario(datatable)">
+            Salvar
+            </button>
         </div>
-    </form>
+   
 
 
     <div>
@@ -97,12 +114,22 @@
                 <td>Guga</td>
                 <td>Masculino</td>
                 <td>Programador</td>
-                <td>2005-01-27</td>
+                <td>27-01-2005</td>
                 <td>1</td>
                 <td>
-                    <button value="editar" class="editar" id="editar" onclick="editar">Editar</button>
-                    <button value="excluir" class="remover" id="remover" onclick="excluirFuncionario(this.rowIndex-1)">
-                        Remover
+                    <button 
+                    value="editar" 
+                    class="editar" 
+                    id="editar" 
+                    onclick="editar">Editar
+                    </button>
+                    
+                    <button 
+                    value="excluir" 
+                    class="remover" 
+                    id="remover" 
+                    onclick="excluirFuncionario(this.rowIndex-1)">
+                    Remover
                     </button>
                 </td>
             </tr>
@@ -111,12 +138,23 @@
                 <td>Dudu</td>
                 <td>Masculino</td>
                 <td>Programador</td>
-                <td>1989-11-26</td>
+                <td>26-11-1989</td>
                 <td>1</td>
                 <td>
-                    <button value="editar" class="editar" id="editar" onclick="btnEditar">Editar</button>
-                    <button value="excluir" class="remover" id="remover" onclick="excluirFuncionario(this.rowIndex-1)">
-                        Remover
+                    <button 
+                    value="editar" 
+                    class="editar" 
+                    id="editar" 
+                    onclick="btnEditar">
+                    Editar
+                    </button>
+                    
+                    <button 
+                    value="excluir" 
+                    class="remover" 
+                    id="remover" 
+                    onclick="excluirFuncionario(this.rowIndex-1)">
+                    Remover
                     </button>
                 </td>
 
