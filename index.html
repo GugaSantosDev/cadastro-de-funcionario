@@ -11,7 +11,7 @@
 
 <header>
     <div>
-        <h1>Cadastro de funcionario</h1>
+        <h1>Cadastro de funcionário</h1>
     </div>
 </header>
 
@@ -21,7 +21,10 @@
 
 <div class="content">
     <div class="form">
+        
+       
 
+        
         <div>
             <label for="nomeCompleto">Nome Completo:</label>
             <input
@@ -47,7 +50,7 @@
         </div>
 
         <div>
-            <label for="profissao">Profisão:</label>
+            <label for="profissao">Profissão:</label>
             <input
                     
                     type="text"
@@ -67,11 +70,12 @@
                     id="dataDeNascimento"
                     class="input-data"
                     placeholder="Data De Nascimento"
+                    
             />
         </div>
 
         <div>
-            <label for="salario">Salario:</label>
+            <label for="salario">Salário:</label>
             <input 
             
             type="number" 
@@ -94,15 +98,16 @@
    
 
 
-    <div>
+    <div> 
         <table id="datatable">
             <thead>
             <tr>
+                
                 <th>Nome</th>
                 <th>Sexo</th>
                 <th>Profissão</th>
                 <th>Data de nascimento</th>
-                <th>Salario</th>
+                <th>Salário</th>
                 <th>Ações</th>
 
 
@@ -110,56 +115,10 @@
             </thead>
 
             <tbody id="tbody">
-            <tr id="funcionario">
-                <td>Guga</td>
-                <td>Masculino</td>
-                <td>Programador</td>
-                <td>27-01-2005</td>
-                <td>1</td>
-                <td>
-                    <button 
-                    value="editar" 
-                    class="editar" 
-                    id="editar" 
-                    onclick="editar">Editar
-                    </button>
-                    
-                    <button 
-                    value="excluir" 
-                    class="remover" 
-                    id="remover" 
-                    onclick="excluirFuncionario(this.rowIndex-1)">
-                    Remover
-                    </button>
-                </td>
-            </tr>
-
-            <tr id="funcionario">
-                <td>Dudu</td>
-                <td>Masculino</td>
-                <td>Programador</td>
-                <td>26-11-1989</td>
-                <td>1</td>
-                <td>
-                    <button 
-                    value="editar" 
-                    class="editar" 
-                    id="editar" 
-                    onclick="btnEditar">
-                    Editar
-                    </button>
-                    
-                    <button 
-                    value="excluir" 
-                    class="remover" 
-                    id="remover" 
-                    onclick="excluirFuncionario(this.rowIndex-1)">
-                    Remover
-                    </button>
-                </td>
+            
 
 
-            </tr>
+            
             </tbody>
 
         </table>

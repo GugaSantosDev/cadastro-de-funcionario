@@ -216,3 +216,7 @@ input {
 ::placeholder {
     text-align: left;
 }
+
+.input-id {
+    display: block;
+}
